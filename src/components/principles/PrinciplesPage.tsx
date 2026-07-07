@@ -773,7 +773,7 @@ const WORKFLOW_ITEMS: WorkflowItem[] = [
   },
   {
     title: "Pending actions & decisions",
-    desc: "Agents identify pending actions/decisions that need human follow-up and resolution.",
+    desc: "Agents could help to identify pending actions/decisions that need human follow-up and resolution.",
     Icon: ListChecks,
   },
   {
