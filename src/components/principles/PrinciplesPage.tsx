@@ -645,14 +645,14 @@ interface IntegratedShot {
 
 const INTEGRATED_SHOTS: IntegratedShot[] = [
   {
-    src: "/wireframes/integrated-dashboard.png",
+    src: "/wireframes/integrated-dashboard-v2.png",
     title: "Executive dashboard",
     path: "/projects/dashboard",
     caption:
       "Portfolio health across every project — milestone progress, KPIs, key dates, and a market-fit radar in one leadership view.",
   },
   {
-    src: "/wireframes/integrated-tome.png",
+    src: "/wireframes/integrated-tome-v2.png",
     title: "Tome project overview",
     path: "/projects/tome",
     caption:
