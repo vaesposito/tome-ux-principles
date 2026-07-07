@@ -768,7 +768,7 @@ const WORKFLOW_ITEMS: WorkflowItem[] = [
   },
   {
     title: "Cross-source delta detection",
-    desc: "Agents (as identified by PMs) surface deltas between different sources; a human reviews them.",
+    desc: "Agents could help to surface deltas between different sources and eventually chose the latest and greatest",
     Icon: GitCompare,
   },
   {
