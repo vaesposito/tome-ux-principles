@@ -748,17 +748,17 @@ interface WorkflowItem {
 const WORKFLOW_ITEMS: WorkflowItem[] = [
   {
     title: "Connect the sources",
-    desc: "Wire in all source systems (GitHub, Jira, Confluence, Webex, Figma…) so synthesis stays grounded.",
+    desc: "Wiring sources will be a manual human action",
     Icon: Plug,
   },
   {
     title: "Human-verified content",
-    desc: "Content is editable so people can verify correctness of what agents write.",
+    desc: "Content should be editable, so that team members can verify correctness of what agents write.",
     Icon: ShieldCheck,
   },
   {
     title: "Updates via the assistant",
-    desc: "Instead of daily/weekly meetings, teams tell the assistant what they're working on; it adds those updates to the overview.",
+    desc: "Teams could skip daily / weekly meetings relying to the assistant to communicate updates and populate the updates widget",
     Icon: MessageSquare,
   },
   {
@@ -1094,7 +1094,7 @@ export function PrinciplesPage() {
                 <div>
                   <h2 className="text-2xl font-bold">Integrated wireframes</h2>
                   <p className="text-sm text-muted-foreground">
-                    The concepts, realized in the running product
+                    Wireframes in action in current TOME version
                   </p>
                 </div>
               </div>
