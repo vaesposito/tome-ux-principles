@@ -11,7 +11,7 @@ import {
   Layers,
   Users,
   GitBranch,
-  Crown,
+  Telescope,
   MessageSquareQuote,
   Target,
   Radar,
@@ -116,7 +116,7 @@ export const PERSONAS: Persona[] = [
     title: "Executive leadership",
     subtitle: "Sponsors · Stakeholders",
     accent: "amber",
-    Icon: Crown,
+    Icon: Telescope,
     need: "Confidence that teams know what they are doing and are progressing against commitments.",
     scope:
       "Outcome-scoped — commitments, KPIs, key risks, decisions needing input",
