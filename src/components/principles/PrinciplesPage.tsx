@@ -1165,10 +1165,6 @@ export function PrinciplesPage() {
                 </div>
               </div>
 
-              {/* Design authorship credit — scoped to this section */}
-              <div className="flex flex-col items-start gap-2 lg:items-end">
-                <CreditPill>Created by the Design</CreditPill>
-              </div>
             </div>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
               Turning those screens into velocity takes changes across the whole
