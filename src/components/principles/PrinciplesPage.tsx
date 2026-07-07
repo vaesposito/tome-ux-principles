@@ -763,7 +763,7 @@ const WORKFLOW_ITEMS: WorkflowItem[] = [
   },
   {
     title: "Activity-rule status",
-    desc: "Project status updates automatically from activity rules (e.g. how long a project has been inactive).",
+    desc: "Projects should have status information which could be updated manually or automatically based on wired sources inactivity",
     Icon: Cog,
   },
   {
