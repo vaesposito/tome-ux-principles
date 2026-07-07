@@ -814,7 +814,7 @@ function WorkflowCard({ item }: { item: WorkflowItem }) {
  */
 function CreditPill({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted/50 px-3 py-1.5 text-xs font-semibold text-muted-foreground">
       <BadgeCheck className="h-4 w-4" />
       {children}
     </span>
@@ -1018,6 +1018,15 @@ export function PrinciplesPage() {
               {/* Design authorship credit — scoped to this section */}
               <div className="flex flex-col items-start gap-2 lg:items-end">
                 <CreditPill>Created by the Design</CreditPill>
+                <a
+                  href="https://www.figma.com/proto/mCSJhBUzt49P0iCbAG1SWR/Tiny-teams-with-tokens?node-id=55-7157&starting-point-node-id=55%3A7157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-primary/80 hover:underline"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  View the interactive prototype in Figma
+                </a>
               </div>
             </div>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -1072,18 +1081,6 @@ export function PrinciplesPage() {
               </div>
             </div>
 
-            {/* Prototype link */}
-            <div>
-              <a
-                href="https://www.figma.com/proto/mCSJhBUzt49P0iCbAG1SWR/Tiny-teams-with-tokens?node-id=55-7157&starting-point-node-id=55%3A7157"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80 hover:underline"
-              >
-                <ExternalLink className="h-4 w-4" />
-                View the interactive prototype in Figma
-              </a>
-            </div>
           </section>
 
           {/* Section divider — full-bleed (spans full page width) */}
