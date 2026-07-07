@@ -861,6 +861,15 @@ export function PrinciplesPage() {
                 across a project.
               </p>
 
+              {/* Positioning statement */}
+              <p className="mt-5 flex items-start gap-2 text-sm font-medium text-primary sm:text-base">
+                <Sparkles className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  At its core, Tome is a coordination &amp; velocity engine for
+                  tiny teams.
+                </span>
+              </p>
+
               {/* Ingest → agent → wiki flow */}
               <div className="mt-7 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <div className="flex flex-wrap items-center gap-2.5">
@@ -892,50 +901,6 @@ export function PrinciplesPage() {
                 <div className="inline-flex w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2 text-sm font-medium text-foreground shadow-sm">
                   <BookOpen className="h-4 w-4 text-muted-foreground" />
                   Readable wiki
-                </div>
-              </div>
-            </div>
-
-            {/* The shift */}
-            <div className="relative overflow-hidden rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 via-card to-card p-6 shadow-sm sm:p-8">
-              <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary">
-                <Sparkles className="h-4 w-4" />
-                The shift
-              </div>
-              <h3 className="mt-3 max-w-3xl text-lg font-semibold leading-snug sm:text-xl">
-                Tome is evolving from a context &amp; accuracy engine toward a
-                coordination &amp; velocity engine for tiny teams.
-              </h3>
-
-              <div className="mt-6 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-5">
-                <div className="flex-1 rounded-xl border border-border bg-muted/40 p-4">
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                    From
-                  </div>
-                  <div className="mt-1.5 text-base font-medium text-foreground/80">
-                    Context &amp; accuracy engine
-                  </div>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                    Getting the record right — faithful, grounded knowledge.
-                  </p>
-                </div>
-
-                <div className="flex shrink-0 items-center justify-center">
-                  <div className="rounded-full border border-primary/30 bg-primary/15 p-2">
-                    <ArrowRight className="h-5 w-5 rotate-90 text-primary sm:rotate-0" />
-                  </div>
-                </div>
-
-                <div className="flex-1 rounded-xl border border-primary/40 bg-primary/10 p-4">
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-primary/80">
-                    To
-                  </div>
-                  <div className="mt-1.5 text-base font-semibold text-primary">
-                    Coordination &amp; velocity engine
-                  </div>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                    Helping tiny teams move together, faster.
-                  </p>
                 </div>
               </div>
             </div>
