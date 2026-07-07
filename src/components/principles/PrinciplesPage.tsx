@@ -778,7 +778,7 @@ const WORKFLOW_ITEMS: WorkflowItem[] = [
   },
   {
     title: "Follow-up notifications",
-    desc: "A notification system helps teams follow up on the above.",
+    desc: "A notification system could help teams follow up.",
     Icon: BellRing,
   },
   {
