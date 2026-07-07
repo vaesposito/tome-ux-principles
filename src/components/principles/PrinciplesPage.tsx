@@ -1102,6 +1102,15 @@ export function PrinciplesPage() {
               {/* Design authorship credit — scoped to this section */}
               <div className="flex flex-col items-start gap-2 lg:items-end">
                 <CreditPill>Created by the Design</CreditPill>
+                <a
+                  href="https://github.com/vaesposito/tome-ux"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary transition-colors hover:text-primary/80 hover:underline"
+                >
+                  <GithubIcon className="h-3.5 w-3.5" />
+                  Permissions required
+                </a>
               </div>
             </div>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
