@@ -980,21 +980,12 @@ export function PrinciplesPage() {
             {/* Subsection B2: The content map (single interactive graph) */}
             <div className="space-y-5">
               <div className="space-y-1.5">
-                <Subheading>
-                  The content map — which sources feed it
-                </Subheading>
+                <Subheading>The content map</Subheading>
                 <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
-                  Team visibility system — Git is the single substrate for all
-                  content. One relationship graph ties it together:{" "}
-                  <span className="font-medium text-foreground">sources</span>{" "}
-                  feed{" "}
-                  <span className="font-medium text-foreground">
-                    content pages
-                  </span>{" "}
-                  (stable, human-curated vs. dynamic, agent-written each cycle),
-                  which in turn serve the{" "}
-                  <span className="font-medium text-foreground">personas</span>{" "}
-                  above.
+                  Different personas will want to see different content. In this
+                  map, personas are connected to content they might want to
+                  access (per role, static or dynamic), and a connection to
+                  potential data sources for them is shown.
                 </p>
               </div>
 
