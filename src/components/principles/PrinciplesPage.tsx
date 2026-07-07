@@ -12,11 +12,9 @@ import {
   Users,
   GitBranch,
   Crown,
-  Bell,
   MessageSquareQuote,
   Target,
   Radar,
-  CalendarClock,
   Image as ImageIcon,
   ExternalLink,
   BadgeCheck,
@@ -91,9 +89,6 @@ export interface Persona {
   Icon: React.ComponentType<{ className?: string }>;
   need: string;
   scope: string;
-  cadence: string;
-  pushed: string[];
-  adHoc: string;
 }
 
 export const PERSONAS: Persona[] = [
@@ -105,16 +100,6 @@ export const PERSONAS: Persona[] = [
     Icon: Users,
     need: "Shared awareness of what changed, what is blocked, and what each function should do next.",
     scope: "Full signal view across all functions",
-    cadence:
-      "Daily standup + weekly synthesis — signal-driven, skippable on low-signal days",
-    pushed: [
-      "Daily standup draft",
-      "Weekly synthesis",
-      "Meeting records & decisions",
-      "Stable page conflict alerts",
-    ],
-    adHoc:
-      'Ask anything — "what did we decide about X?" grounded in the full knowledge base',
   },
   {
     key: "complementary",
@@ -125,14 +110,6 @@ export const PERSONAS: Persona[] = [
     need: "Dependency clarity — what interfaces, timelines, or directions are changing that affect their work.",
     scope:
       "Interface-scoped — only what touches shared APIs, timelines, or deliverables",
-    cadence: "Triggered by significant change",
-    pushed: [
-      "Dependency update alerts",
-      "Relevant decision log excerpts",
-      "Roadmap change notifications",
-    ],
-    adHoc:
-      'Ask anything — "what is their current API approach?" answered from stable pages',
   },
   {
     key: "executive",
@@ -143,15 +120,6 @@ export const PERSONAS: Persona[] = [
     need: "Confidence that teams know what they are doing and are progressing against commitments.",
     scope:
       "Outcome-scoped — commitments, KPIs, key risks, decisions needing input",
-    cadence: "Weekly / biweekly — 5-minute async read, no meeting required",
-    pushed: [
-      "Commitment status",
-      "Key developments this period",
-      "Confidence in direction",
-      "Decisions needing input",
-    ],
-    adHoc:
-      'Ask anything — "where are we on the roadmap?" answered instantly, no meeting needed',
   },
 ];
 
@@ -262,47 +230,6 @@ function PersonaCard({ persona, index }: { persona: Persona; index: number }) {
           <p className="text-sm leading-relaxed text-foreground/90">
             {persona.scope}
           </p>
-        </div>
-
-        <div className="space-y-1.5">
-          <RowLabel icon={<CalendarClock className="h-3 w-3" />}>
-            Cadence
-          </RowLabel>
-          <p className="text-sm leading-relaxed text-foreground/90">
-            {persona.cadence}
-          </p>
-        </div>
-
-        <div className="space-y-2">
-          <RowLabel icon={<Bell className="h-3 w-3" />}>
-            Pushed automatically
-          </RowLabel>
-          <ul className="flex flex-col gap-1.5">
-            {persona.pushed.map((item) => (
-              <li
-                key={item}
-                className={cn(
-                  "flex items-center gap-2 rounded-lg border px-2.5 py-1.5 text-xs font-medium",
-                  s.pill,
-                )}
-              >
-                <span
-                  aria-hidden
-                  className={cn("h-1.5 w-1.5 shrink-0 rounded-full", s.dot)}
-                />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mt-auto space-y-2 pt-1">
-          <RowLabel icon={<MessageSquareQuote className="h-3 w-3" />}>
-            Ad-hoc query
-          </RowLabel>
-          <blockquote className="rounded-lg border-l-2 border-border bg-muted/40 px-3 py-2 text-xs italic leading-relaxed text-muted-foreground">
-            {persona.adHoc}
-          </blockquote>
         </div>
       </div>
     </motion.div>
