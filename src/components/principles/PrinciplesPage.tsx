@@ -783,7 +783,7 @@ const WORKFLOW_ITEMS: WorkflowItem[] = [
   },
   {
     title: "Corrections, feedback & suggestions management",
-    desc: "Capture and manage corrections, feedback, and suggestions on wiki content — routed to the right owner and resolved (the suggestion-queue bridge from the content map).",
+    desc: "A feedback system could help all personas to refine the displayed content and make the project advance",
     Icon: MessageSquareQuote,
   },
 ];
