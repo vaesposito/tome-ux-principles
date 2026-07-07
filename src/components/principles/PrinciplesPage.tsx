@@ -1114,8 +1114,8 @@ export function PrinciplesPage() {
               </div>
             </div>
             <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
-              The wireframes above are becoming working product. For Tome to move
-              from a{" "}
+              We adapted the current version of TOME, integrating some of the
+              elements recommended in the wireframes. For Tome to move from a{" "}
               <span className="font-medium text-foreground">
                 context &amp; accuracy engine
               </span>{" "}
