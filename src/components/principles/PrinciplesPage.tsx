@@ -1026,6 +1026,11 @@ export function PrinciplesPage() {
               view, and a leadership outcomes view. Click any screen to view it
               full size.
             </p>
+            <p className="mt-3 max-w-3xl rounded-lg border border-border/60 bg-muted/30 px-4 py-3 text-xs italic leading-relaxed text-muted-foreground">
+              These are first explorations. Design recommends expanding and
+              discussing them with teams — personas, needs, and workflows — to
+              reach a more refined and thoughtful version.
+            </p>
 
             {/* Subgroup: Browsing across projects (screens 1–2) */}
             <div className="space-y-4">
@@ -1125,6 +1130,11 @@ export function PrinciplesPage() {
               </span>{" "}
               for tiny teams, the wireframes need real workflow impact — not just
               screens.
+            </p>
+            <p className="mt-3 max-w-3xl rounded-lg border border-border/60 bg-muted/30 px-4 py-3 text-xs italic leading-relaxed text-muted-foreground">
+              These are first explorations. Design recommends expanding and
+              discussing them with teams — personas, needs, and workflows — to
+              reach a more refined and thoughtful version.
             </p>
 
             {/* Static screenshots of the running app (full-width, click to expand) */}
