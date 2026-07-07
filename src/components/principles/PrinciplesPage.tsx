@@ -870,8 +870,11 @@ export function PrinciplesPage() {
                 </span>
               </p>
 
+              <p className="mt-7 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Current Tome
+              </p>
               {/* Ingest → agent → wiki flow */}
-              <div className="mt-7 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <div className="mt-2 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <div className="flex flex-wrap items-center gap-2.5">
                   <SourceChip
                     icon={<GithubIcon className="h-4 w-4" />}
