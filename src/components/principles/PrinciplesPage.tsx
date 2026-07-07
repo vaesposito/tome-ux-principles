@@ -564,7 +564,7 @@ export const DYNAMIC_GROUPS: DynamicGroup[] = [
 // ─── In-page section navigation ──────────────────────────────────────
 const SECTIONS = [
   { id: "context", label: "Context" },
-  { id: "who-its-for", label: "Who Tome is for" },
+  { id: "who-its-for", label: "Personas & needs" },
   { id: "wireframes", label: "Wireframes" },
   { id: "integrated", label: "Integrated wireframes" },
   { id: "workflow", label: "Workflow impact considerations" },
@@ -809,7 +809,7 @@ function WorkflowCard({ item }: { item: WorkflowItem }) {
 
 /**
  * A small "Created by …" authorship credit pill. Shared by the PM credit in
- * "Who Tome is for" and the Design credits on the Wireframes-onward sections so
+ * "Personas & needs" and the Design credits on the Wireframes-onward sections so
  * they stay visually consistent. The pill itself never carries a link.
  */
 function CreditPill({ children }: { children: React.ReactNode }) {
@@ -909,7 +909,7 @@ export function PrinciplesPage() {
           {/* Section divider — full-bleed (spans full page width) */}
           <div className="relative left-1/2 right-1/2 -mx-[50vw] h-px w-screen bg-border/60" />
 
-          {/* ══════════ SECTION: Who Tome is for (PM-authored) ══════════ */}
+          {/* ══════════ SECTION: Personas & needs (PM-authored) ══════════ */}
           <section id="who-its-for" className="scroll-mt-24 space-y-10">
             <div className="space-y-5">
               <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-start">
@@ -918,7 +918,7 @@ export function PrinciplesPage() {
                     <Users className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold">Who Tome is for</h2>
+                    <h2 className="text-2xl font-bold">Personas &amp; needs</h2>
                     <p className="text-sm text-muted-foreground">
                       Who this project is for, what each persona is looking for,
                       and which sources provide it
